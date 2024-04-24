@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css"
+    />
+    <script src="./js/cadastrar.js" defer></script>
+    <title>Taskade - Forms</title>
+  </head>
+  <body class="hero is-fullheight has-background-primary-65 is-bold">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-half">
+            <form class="box">
+              <div class="field">
+                <label for="titulo" class="label">Titulo</label>
+                <div class="control">
+                  <input id="titulo" class="input" type="text" placeholder="Título da task" />
+                  
+                </div>
+                <span id="titulo-error" class="has-text-danger"></span>
+              </div>
+
+              <div class="field">
+                <label for="descricao" class="label">Descrição</label>
+                <div class="control">
+                  <textarea id="descricao" class="textarea" placeholder="Descrição da task"></textarea>
+                </div>
+                <span id="descricao-error" class="has-text-danger"></span>
+              </div>
+
+              <div class="field has-addons">
+                <p class="control">
+                  <label for="pontos" class="label">Pontos</label>
+                  <input id="pontos" class="input" type="number" placeholder="Quantidade de pontos"/>
+                </p>
+                <span id="pontos-error" class="has-text-danger"></span>
+              </div>
+              <div class="field">
+                <label class="label">Prioritário?</label>
+                <div class="control">
+                  <label class="radio">
+                    <input type="radio" name="question" />
+                    Sim
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="question" />
+                    Não
+                  </label>
+                </div>
+              </div>
+              <br />
+              <div class="field is-grouped is-grouped-centered">
+                <p class="control">
+                  <a id="botao-cadastrar" href="#" class="button is-success">
+                    <strong>Enviar</strong>
+                  </a>
+                </p>
+                <p class="control">
+                  <a id="botao-deletar" href="./index.html" class="button is-danger">
+                    <strong>Cancelar</strong>
+                  </a>
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

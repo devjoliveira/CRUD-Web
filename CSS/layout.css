@@ -1,0 +1,7 @@
+.apagando {
+    animation: fadeout 1s;
+}
+
+@keyframes fadeout {
+    to { opacity: 0; }
+}
